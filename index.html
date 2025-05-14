@@ -190,7 +190,18 @@
           <h2 class="title is-3">Methodology</h2>
           <div class="content has-text-justified">
             <p>
-              Recent
+              Our method comprises two main stages: an offline preparation phase and an online inference phase. During
+              the offline phase, we process a dataset of expert demonstrations $\mathcal{X}_N$, assumed to reflect
+              nominal behavior, by extracting feature representations from observations. These features are stored in a
+              memory buffer $\mathcal{M}$, providing a compact statistical model of normal operation.
+              In the online phase, the AD module operates concurrently with the execution of the generative policy
+              $f_\theta$. At each time step $t$, the policy receives a multimodal observation $O_t$ and outputs an
+              action $A_t = f_\theta(O_t)$. Prior to executing the action, $O_t$ is encoded into the feature space, and
+              an anomaly score is computed by comparing it to the distribution of features stored in $\mathcal{M}$. This
+              enables real-time monitoring of the system's behavior without interrupting the robot's control loop.
+              By decoupling the modeling of nominal behavior from online evaluation, the proposed two-stage architecture
+              ensures computational efficiency which enhance reliability by promptly detecting deviations from expected
+              operational patterns.
             </p>
           </div>
         </div>
