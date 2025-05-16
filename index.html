@@ -315,7 +315,7 @@
             <p>
               We evaluated Safe-\( \pi \) along with several SotA baselines on BotFails. Safe-\( \pi \) delivers the
               highest
-              overall performance, achieving an average AUROC of \( \textbf{70.5\%} \) and F1@Opt of \( \textbf{62.9\%}
+              overall performance, achieving an average AUROC of \( \textbf{70.5%} \) and F1@Opt of \( \textbf{62.9%}
               \),
               exceeding the best-performing baseline, \( \textit{logpZO} \), by more than 5 points in AUROC and 3 points
               in
@@ -333,11 +333,16 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="single-image-display">
-          <div class="item" style="max-width: 100%; width: 70%;">
+          <div class="item" style="max-width: 100%; width: 100%;">
             <img src="static/images/Results.png" alt="MY ALT TEXT" />
             <h2 class="subtitle has-text-centered">
-              We introduce BotFails, a new dataset specifically designed for one-class multimodal anomaly detection in
-              robotics, incorporating vision, proprioception, and natural language instructions.
+              mean AUROC and mean F1-score at optimal threshold ( \(\textbf{in %}\)), as well as inference time
+              (\(\textbf{in
+              ms}\), for anomaly detection only and full pipeline including the encoder), evaluated on the
+              \( \textit{BotFails} \) dataset across various AD methods. Experiments were conducted on an NVIDIA GeForce
+              RTX
+              3090 GPU and an AMD Ryzen 9 5900X CPU (24 threads @ 3.70GHz). Best results are highlighted in bold. Each
+              task score reflects performance over multiple rollouts (several dozens per task).
             </h2>
           </div>
         </div>
