@@ -141,11 +141,12 @@
   <!-- Video intro -->
   <section class="hero is-small">
     <div class="hero-body">
-      <div class="container">
+      <div class="container has-text-centered">
         <h2 class="title is-3"></h2>
-        <div id="videos-intro" class="intro results-intro">
-          <div class="item item-video1">
-            <video poster="" id="video1" autoplay controls muted loop height="100%">
+        <div id="videos-intro" class="intro results-intro" style="display: flex; justify-content: center;">
+          <div class="item item-video1" style="max-width: 100%; width: 80%;">
+            <video poster="" id="video1" autoplay controls muted loop
+              style="width: 100%; height: auto; border-radius: 10px;">
 
               <source src="static/videos/intro.mp4" type="video/mp4">
             </video>
